@@ -19,7 +19,7 @@ jobs:
       contents: read
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Parse issue form
         uses: stefanbuck/github-issue-parser@v3
@@ -27,8 +27,12 @@ jobs:
         with:
           template-path: .github/ISSUE_TEMPLATE/userstoriesgeneral.yml
 
-      - name: Set labels based on animals field
-        uses: redhat-plumbers-in-action/advanced-issue-labeler@v2
+      - name: Set labels based on severity field
+        uses: redhat-plumbers-in-action/advanced-issue-labeler@v3.2.2
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
+          section: severity
+          block-list: |
+            None
+            Other
           token: ${{ secrets.GITHUB_TOKEN }}
