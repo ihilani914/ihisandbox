@@ -3,5 +3,9 @@ policy:
       - id: [story_topic]
         block-list: ['None', 'Other']
         label:
-          - name: 'kind: bug'
+          - name: 'bug'
             keys: ['bug']
+          - name: 'documentation'
+            keys: ['documentation']
+          - name: 'duplicate'
+            keys: ['duplicate']
