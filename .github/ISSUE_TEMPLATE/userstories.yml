@@ -53,15 +53,9 @@ body:
       label: Topic of user story
       description: From the [Mukurtu User Manual](https://mukurtu-user-manual.readthedocs.io/). Can select multiple topics. Specify other if existing topics do not apply.
       options:
-        - label: Hosting, site setup, and administration
-        - label: Getting started
-        - label: Enriching digital heritage
-        - label: Managing media
-        - label: Managing site users
-        - label: Mukurtu dictionary
-        - label: Site look and feel
-        - label: Roundtrip (import/export)
-        - label: Other topics
+        - label: bug
+        - label: documentation
+        - label: duplicate
     validations:
       required: true
 
