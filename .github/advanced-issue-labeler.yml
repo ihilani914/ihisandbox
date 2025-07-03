@@ -1,1 +1,7 @@
-
+policy:
+  - section:
+      - id: [story_topic]
+        block-list: ['None', 'Other']
+        label:
+          - name: 'kind: bug'
+            keys: ['bug']
