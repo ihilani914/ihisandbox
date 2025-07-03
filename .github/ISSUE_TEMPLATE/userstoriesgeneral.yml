@@ -24,7 +24,7 @@ body:
       required: false
 
   - type: checkboxes
-    id: story_topic
+    id: topic
     attributes:
       label: Topic of user story
       options:
