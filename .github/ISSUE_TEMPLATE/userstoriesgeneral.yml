@@ -27,7 +27,6 @@ body:
     id: story_topic
     attributes:
       label: Topic of user story
-      description: From the [Mukurtu User Manual](https://mukurtu-user-manual.readthedocs.io/). Can select multiple topics. Specify other if existing topics do not apply.
       options:
         - label: bug
         - label: documentation
