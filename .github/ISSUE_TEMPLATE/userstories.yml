@@ -4,14 +4,6 @@ title: Mukurtu CMS User Stories Submission
 labels: ["user stories"]
 body:
   - type: input
-    id: User_story
-    attributes:
-      label: User story name
-      description: Give your user story a descriptive name.
-    validations:
-      required: true
-
-  - type: input
     id: Contact_information
     attributes:
       label: Email address
@@ -54,8 +46,30 @@ body:
       description: From the [Mukurtu User Manual](https://mukurtu-user-manual.readthedocs.io/). Can select multiple topics. Specify other if existing topics do not apply.
       options:
         - label: bug
-        - label: documentation
-        - label: duplicate
+        - label: categories
+        - label: collections
+        - label: comments
+        - label: communities
+        - label: cultural protocols
+        - label: customization
+        - label: dictionary
+        - label: digital heritage
+        - label: integrations
+        - label: local contexts
+        - label: localization
+        - label: mapping and leaflet
+        - label: media
+        - label: migration
+        - label: notifications/events
+        - label: person records
+        - label: publishing workflows
+        - label: roundtrip
+        - label: search and discovery
+        - label: site configuration and administration
+        - label: taxonomies
+        - label: theme/look and feel
+        - label: user management
+        - label: other
     validations:
       required: true
 
@@ -112,20 +126,7 @@ body:
       description: A list of items or descriptions of what success looks like for the action or feature described. For a list, please number or bullet your points.
     validations:
       required: true
-
-  - type: checkboxes
-    id: Prioritization
-    attributes:
-      label: Prioritization
-      description: Please choose the priority level for this action using the MosCoW method of importance.
-      options:
-        - label: M(ust)
-        - label: S(hould)
-        - label: C(ould)
-        - label: W(ould)
-    validations:
-      required: true
-
+      
   - type: checkboxes
     id: Submitting_org
     attributes:
