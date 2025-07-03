@@ -1,14 +1,12 @@
 policy:
-  - template: [userstoriesgeneral.yml]
-    section:
+  - section:
       - id: [story_topic]
-        block-list: [other]
+        block-list: ['None', 'Other']
         label:
-          - name: bug
+          - name: 'bug'
             keys: ['bug']
-
-          - name: documentation
+          - name: 'documentation'
             keys: ['documentation']
-
-          - name: duplicate
+          - name: 'duplicate'
             keys: ['duplicate']
+   
