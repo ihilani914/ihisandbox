@@ -1,0 +1,17 @@
+        - name: Advanced Issue Labeler
+  # You may pin to the exact commit or the version.
+  # uses: redhat-plumbers-in-action/advanced-issue-labeler@0db433d412193574252480b4fc22f2e4319a4ea3
+  uses: redhat-plumbers-in-action/advanced-issue-labeler@v3.2.2
+  with:
+    # Representation of issue form in JSON type
+    issue-form: 
+    # Each issue form can have defined different labeling policy, this option is used to specify which policy should be used.
+    template: # optional, default is 
+    # Section of form that is used to determine labels
+    section: # optional, default is 
+    # Array of words excluded from labeling process, these words won't be set as labels. Use yaml `|` syntax when setting multiple values.
+    block-list: # optional, default is 
+    # Path to configuration file
+    config-path: # default is .github/advanced-issue-labeler.yml
+    # GitHub token used to set issue labels
+    token: 
