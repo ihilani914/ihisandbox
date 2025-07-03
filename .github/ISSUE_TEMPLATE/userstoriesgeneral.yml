@@ -114,6 +114,7 @@ body:
       label: Example screenshots
       description: Optionally attach screenshots here.
       placeholder: If you have an example of something similar from elsewhere, you can add screenshots here. 
+  
   - type: input
     id: submitting_org
     attributes: 
