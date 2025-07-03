@@ -1,7 +1,7 @@
 name: Mukurtu CMS User Stories Submission - General Users
 description: Use this form if you are submitting an issue as a general Mukurtu user.
 title: Mukurtu CMS User Stories Submission - General Users 
-label: "user story"
+labels: "user story"
 body:
   - type: checkboxes
     id: story_type
