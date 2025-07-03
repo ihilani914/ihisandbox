@@ -109,6 +109,13 @@ body:
     validations:
       required: true
       
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Example screenshots
+      description: Optionally attach screenshots here.
+      placeholder: If you have an example of something similar from elsewhere, you can add screenshots here.
+      
   - type: checkboxes
     id: Submitting_org
     attributes:
