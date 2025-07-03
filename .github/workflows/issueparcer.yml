@@ -4,7 +4,7 @@
   uses: stefanbuck/github-issue-parser@v3.0.1
   with:
     # Path to the issue form template file
-    template-path: # optional
+    template-path: # .github/ISSUE_TEMPLATE
     # Issue body to parse
     issue-body: # default is ${{ github.event.issue.body }}
           
