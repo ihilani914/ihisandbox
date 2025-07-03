@@ -1,6 +1,6 @@
 policy:
   - section:
-      - id: [topic_of_user_story]
+      - id: [story_topic]
         label:
           - name: 'bug'
             keys: ['bug']
