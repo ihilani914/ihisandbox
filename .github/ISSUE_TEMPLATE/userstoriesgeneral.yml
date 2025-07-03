@@ -23,11 +23,10 @@ body:
     validations:
       required: false
 
-  - type: dropdown
-    id: topic
+  - type: checkboxes
+    id: story_topic
     attributes:
       label: Topic of user story
-      multiple: true 
       options:
         - label: bug
         - label: documentation
