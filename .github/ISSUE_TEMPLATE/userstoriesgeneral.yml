@@ -23,7 +23,7 @@ body:
     validations:
       required: false
 
-  - type: dropdown
+  - type: checkboxes
     id: story_topic
     attributes:
       label: Topic of user story
