@@ -1,18 +1,16 @@
 name: GitHub Issue Parser
   You may pin to the exact commit or the version.
-  uses: stefanbuck/github-issue-parser@a2288dcd2cd99cf25f64ff3ef2dbed757c3a53ce
-  uses: stefanbuck/github-issue-parser@v3.0.1
-  with:
+  uses stefanbuck/github-issue-parser@a2288dcd2cd99cf25f64ff3ef2dbed757c3a53ce
+  uses stefanbuck/github-issue-parser@v3.0.1
+  with
     # Path to the issue form template file
-    template-path: # .github/ISSUE_TEMPLATE
+template-path: # .github/ISSUE_TEMPLATE
     # Issue body to parse
-    issue-body: # default is ${{ github.event.issue.body }}
-
-            - name: Advanced Issue Labeler
+    issue-body # default is ${{ github.event.issue.body }}
   # You may pin to the exact commit or the version.
   # uses: redhat-plumbers-in-action/advanced-issue-labeler@0db433d412193574252480b4fc22f2e4319a4ea3
-  uses: redhat-plumbers-in-action/advanced-issue-labeler@v3.2.2
-  with:
+uses: redhat-plumbers-in-action/advanced-issue-labeler@v3.2.2
+with:
     # Representation of issue form in JSON type
     issue-form: 
     # Each issue form can have defined different labeling policy, this option is used to specify which policy should be used.
@@ -25,7 +23,7 @@ name: GitHub Issue Parser
     config-path: # default is .github/advanced-issue-labeler.yml
     # GitHub token used to set issue labels
     token: 
-name: Issue labeler
+
 on:
   issues:
     types: [ opened ]
