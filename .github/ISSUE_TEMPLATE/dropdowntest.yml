@@ -32,6 +32,8 @@ body:
         - bug
         - categories
         - collections
+    validations:
+      required: true
 
   - type: input
     id: story_topic_other
