@@ -1,14 +1,42 @@
 name: Hubs and spokes user story
 description: Use this form if you are part of the Mukurtu Hubs and Spokes, or if otherwise requested by the Mukurtu development team.
-title: Provide a short descriptive title for your user story
+title: 
 labels: ["user story"]
 body:
 
   - type: markdown
     attributes:
       value: |
-        Support Tools: 
+        This form is only for user stories submitted by our Hubs, Spokes, and other partners as requested. Members of the broader community should use the *General Mukurtu CMS user story* form instead.
+
+        ## Relevant tools and resources:
         - [Mukurtu 4 User Manual](https://mukurtu-user-manual.readthedocs.io/)
+
+  - type: dropdown
+    id: Submitting_org
+    attributes:
+      multiple: true
+      label: Submitting organization
+      description: If you are not a member of a Mukurtu Hub, please select "Other organization". If the submission is being made by a Hub on behalf of a spoke or community partner, select the Hub *and* "Other organization".
+      options:
+        - Alaska
+        - California
+        - Hawaii and Pacific
+        - New South Wales, Australia
+        - US East
+        - US Midwest
+        - US West
+        - Other organization (specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: submitting_org_other
+    attributes: 
+      label: Other submitting organization
+      description: If you selected "Other organization", specify your institution, organization, or community.
+    validations:
+      required: false
 
   - type: dropdown
     id: story_type
@@ -19,7 +47,7 @@ body:
       options:
         - New feature or tool
         - Update to an existing feature or tool
-        - Other (please specify below)
+        - Other user story type (specify below)
     validations:
       required: true
 
@@ -27,16 +55,16 @@ body:
     id: story_type_other
     attributes: 
       label: Other user story type
-      description: If you selected "Other", please briefly describe your story type.
+      description: If you selected "Other user story type", briefly describe your story type.
     validations:
       required: false
 
   - type: dropdown
     id: story_topic
     attributes:
-      label: Topic
+      label: User story topic
       multiple: true
-      description: Select all that apply.
+      description: These topics correspond with the main features and tools in Mukurtu CMS. Select all that apply. 
       options:
         - bug
         - categories
@@ -62,7 +90,7 @@ body:
         - taxonomies
         - theme/look and feel
         - user management
-        - other
+        - other topic
     validations:
       required: true
 
@@ -70,7 +98,7 @@ body:
     id: story_topic_other
     attributes: 
       label: Other topic
-      description: If you selected "Other", please provide the topic.
+      description: If you selected "Other topic", specify the topic.
     validations:
       required: false
 
@@ -79,18 +107,25 @@ body:
       value: |
         ## User story format
       
-        Our user stories follow the *As a...*, *I want to...*, *So that...* format.
-        eg: *As a* community manager, *I want to* create new user accounts, *so that* I don't have to ask the site administrator to do it.
+        User stories use the following format: *As a* [type of user], *I want to* [perform an action], *so that* [I accomplish a specific outcome or benefit].
+
+        For example, As a *community manager*, I want to *create new user accounts*, so that *I don't have to ask the site administrator to do it*.
+
+        This short format is also accompanied by a more detailed description of acceptance criteria, as needed.
         
   - type: dropdown
     id: user_type
     attributes:
       label: As a...
       multiple: true
-      description: Select each user type that this applies to. Can select multiple user types. 
+      description: Select the user role(s) that should use this tool. Select all that apply.
       options:
+        - Drupal administrator
         - Mukurtu administrator
+        - Authenticated user
+        - Visitor
         - Community manager
+        - Community member
         - Community affiliate
         - Protocol steward
         - Protocol member
@@ -99,9 +134,7 @@ body:
         - Community record steward
         - Curator
         - Language steward
-        - Lanugage contributor
-        - Authenticated user
-        - Visitor
+        - Language contributor
     validations:
       required: true
 
@@ -109,7 +142,7 @@ body:
     id: Action
     attributes:
       label: I want to...
-      description: Please describe the action you would like to take in this role.
+      description: Briefly describe the action that these user(s) should be able to take.
     validations:
       required: true
 
@@ -117,7 +150,7 @@ body:
     id: Benefit
     attributes:
       label: So that...
-      description: Please describe the benefit that taking this action would confer.
+      description: Briefly describe the benefit our outcome.
     validations:
       required: true
 
@@ -125,55 +158,6 @@ body:
     id: Acceptance_criteria
     attributes:
       label: Acceptance criteria
-      description: A list of items or descriptions of what success looks like for the action or feature described. For a list, please number or bullet your points. If you have an example of something similar from elsewhere, you can add screenshots here.
+      description: Provide more detail about the specifics of the user story. This may include a list of items or descriptions of what success looks like for the action or feature described. For a list, please number or bullet your points. If you have an example of something similar from elsewhere, you can add screenshots here.
     validations:
       required: true
-      
-  - type: dropdown
-    id: Submitting_org
-    attributes:
-      multiple: true
-      label: Submitting organization/hub
-      description: If you are not a member of the Mukurtu Hubs project, please select "Other organization", and identify your institution, organization, or community.
-      options:
-        - Alaska Hub
-        - California Hub
-        - Hawaii and Pacific Hub
-        - New South Wales, Australia Hub    
-        - US East Hub        
-        - US Midwest Hub
-        - US West Hub
-        - Other organization
-    validations:
-      required: true
-
-  - type: input
-    id: submitting_org_other
-    attributes: 
-      label: Other organization
-      description: If you selected "Other organization", please identify your institution, organization, or community.
-    validations:
-      required: false
-      
-  - type: dropdown
-    id: origin_user_story
-    attributes:
-      multiple: false
-      label: Origination of user story
-      description: If you are not a member of the Mukurtu Hubs project, please skip this question.
-      options:
-        - Requested by Mukurtu Hubs staff
-        - Requested by Mukurtu Hubs community partner
-        - Other origin
-    validations:
-      required: false
-
-  - type: input
-    id: origin_other
-    attributes: 
-      label: Other origin
-      description: If you selected "Other origin", please identify the origin of your request.
-    validations:
-      required: false
-
-
