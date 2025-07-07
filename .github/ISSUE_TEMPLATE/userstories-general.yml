@@ -9,7 +9,7 @@ body:
       value: |
         This form is for user stories submitted by the general Mukurtu community. If you represent one of our Hubs, Spokes, or other partner, please use the "Hubs and spokes user story" form.
        
-        ## Relevant tools and resources:
+        "## Relevant tools and resources:"
         - [Mukurtu 4 User Manual](https://mukurtu-user-manual.readthedocs.io/)
         
   - type: input
