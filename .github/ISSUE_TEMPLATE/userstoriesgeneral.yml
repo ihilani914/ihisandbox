@@ -43,7 +43,9 @@ body:
         - label: mapping and leaflet
         - label: media
         - label: migration
+        - label: notifications and events
         - label: person records
+        - label: publishing workflows
         - label: roundtrip
         - label: search and discovery
         - label: site configuration and administration
