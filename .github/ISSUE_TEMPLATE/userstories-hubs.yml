@@ -19,8 +19,7 @@ body:
       multiple: true
       label: Submitting organization
       description: If you represent a Hub, select your hub.  
-        If you represent a community spoke, Mukurtu Community Curation Specialist, or other partner, select "Other organization".  
-        If the submission is being made by a Hub on behalf of a spoke or community partner, select the Hub *and* "Other organization".
+        If you represent a community spoke, Mukurtu Community Curation Specialist, or other partner, select "Other organization". If the submission is being made by a Hub on behalf of a spoke or community partner, select the Hub *and* "Other organization".
       options:
         - Alaska
         - California
@@ -67,8 +66,7 @@ body:
     attributes:
       label: User story topic
       multiple: true
-      description: These topics correspond with the main features and tools in Mukurtu CMS.  
-        Select all that apply. 
+      description: These topics correspond with the main features and tools in Mukurtu CMS. Select all that apply. 
       options:
         - bug
         - categories
@@ -122,8 +120,7 @@ body:
     attributes:
       label: As a...
       multiple: true
-      description: Select the user role(s) that should use this tool.  
-        Select all that apply.
+      description: Select the user role(s) that should use this tool. Select all that apply.
       options:
         - Drupal administrator
         - Mukurtu administrator
@@ -163,8 +160,6 @@ body:
     id: Acceptance_criteria
     attributes:
       label: Acceptance criteria
-      description: Provide more detail about the specifics of the user story. This may include a list of items or descriptions of what success looks like for the action or feature described.  
-        For a list, please number or bullet your points.  
-        If you have an example of something similar from elsewhere, you can add screenshots here.
+      description: Provide more detail about the specifics of the user story. This may include a list of items or descriptions of what success looks like for the action or feature described. For a list, please number or bullet your points. If you have an example of something similar from elsewhere, you can add screenshots here.
     validations:
       required: true
