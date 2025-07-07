@@ -1,5 +1,5 @@
 name: Hubs-only Mukurtu CMS user story
-description: User stories are a plain English description of a software feature or function from the end-user perspective. All fields are required unless otherwise indicated.
+description: Use this form if you are part of a Mukurtu Hubs and Spokes partnership, or if requested to by the Mukurtu development team.
 title: Mukurtu CMS User Stories Submission
 labels: ["user story"]
 body:
@@ -13,7 +13,7 @@ body:
         - label: Update to existing feature/tool
         - label: Other
     validations:
-       required: true
+      required: true
 
   - type: input
     id: story_type_other
