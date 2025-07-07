@@ -68,7 +68,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Our user stories follow the <As a...>, <I want to...>, <So that...> format.
+        **User story format**
+        Our user stories follow the *As a...*, *I want to...*, *So that...* format.
 
   - type: checkboxes
     id: user_type
