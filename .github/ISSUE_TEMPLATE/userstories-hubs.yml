@@ -132,8 +132,7 @@ body:
         - label: US Midwest Hub
         - label: US West Hub
         - label: Other organization
-    validations:
-      required: true
+          required: true
 
   - type: input
     id: submitting_org_other
