@@ -150,7 +150,7 @@ body:
     id: Benefit
     attributes:
       label: So that...
-      description: Briefly describe the benefit our outcome.
+      description: Briefly describe the benefit or outcome.
     validations:
       required: true
 
