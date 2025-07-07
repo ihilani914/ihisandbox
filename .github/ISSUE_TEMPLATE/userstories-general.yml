@@ -4,7 +4,7 @@ title: Provide a short descriptive title for your user story.
 labels: ["user story"]
 body:
 
-- type: markdown
+  - type: markdown
     attributes:
       value: |
         This form is for user stories submitted by the general Mukurtu community. If you represent one of our Hubs, Spokes, or other partner, please use the "Hubs and spokes user story" form.
