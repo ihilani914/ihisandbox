@@ -137,7 +137,7 @@ body:
     validations:
       required: true
 
-   - type: textarea
+  - type: textarea
     id: Acceptance_criteria
     attributes:
       label: Acceptance criteria
