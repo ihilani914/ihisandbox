@@ -1,17 +1,25 @@
-name: Hubs-only Mukurtu CMS user story
+name: Hubs and spokes user story
 description: Use this form if you are part of the Mukurtu Hubs and Spokes, or if otherwise requested by the Mukurtu development team.
 title: Provide a short descriptive title for your user story
 labels: ["user story"]
 body:
-  - type: checkboxes
+
+  - type: markdown
+    attributes:
+      value: |
+        Support Tools: 
+        - [Mukurtu 4 User Manual](https://mukurtu-user-manual.readthedocs.io/)
+
+  - type: dropdown
     id: story_type
     attributes:
       label: Type of user story
+      multiple: false
       description: Select the type of user story.
       options:
-        - label: New feature or tool
-        - label: Update to an existing feature or tool
-        - label: Other (please specify below)
+        - New feature or tool
+        - Update to an existing feature or tool
+        - Other (please specify below)
     validations:
       required: true
 
@@ -28,7 +36,7 @@ body:
     attributes:
       label: Topic
       multiple: true
-      description: From the [Mukurtu User Manual](https://mukurtu-user-manual.readthedocs.io/). Can select multiple topics. Specify other if existing topics do not apply.
+      description: Select all that apply.
       options:
         - bug
         - categories
@@ -62,22 +70,23 @@ body:
     id: story_topic_other
     attributes: 
       label: Other topic
-      description: If you selected "Other topics", please briefly describe your story topic.
+      description: If you selected "Other", please provide the topic.
     validations:
       required: false
 
   - type: markdown
     attributes:
       value: |
+        User story format
+        ___
 
-        __User story format__
         Our user stories follow the *As a...*, *I want to...*, *So that...* format.
         eg: *As a* community manager, *I want to* create new user accounts, *so that* I don't have to ask the site administrator to do it.
         
   - type: dropdown
     id: user_type
     attributes:
-      label: In this user role
+      label: As a...
       multiple: true
       description: Select each user type that this applies to. Can select multiple user types. 
       options:
@@ -100,7 +109,7 @@ body:
   - type: input
     id: Action
     attributes:
-      label: I want to perform this action
+      label: I want to...
       description: Please describe the action you would like to take in this role.
     validations:
       required: true
@@ -108,40 +117,34 @@ body:
   - type: input
     id: Benefit
     attributes:
-      label: So that this benefit will occur. 
+      label: So that...
       description: Please describe the benefit that taking this action would confer.
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: Acceptance_criteria
     attributes:
       label: Acceptance criteria
-      description: A list of items or descriptions of what success looks like for the action or feature described. For a list, please number or bullet your points.
+      description: A list of items or descriptions of what success looks like for the action or feature described. For a list, please number or bullet your points. If you have an example of something similar from elsewhere, you can add screenshots here.
     validations:
       required: true
       
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Example screenshots
-      description: Optionally attach screenshots here.
-      placeholder: If you have an example of something similar from elsewhere, you can add screenshots here.
-      
-  - type: checkboxes
+  - type: dropdown
     id: Submitting_org
     attributes:
+      multiple: true
       label: Submitting organization/hub
       description: If you are not a member of the Mukurtu Hubs project, please select "Other organization", and identify your institution, organization, or community.
       options:
-        - label: Alaska Hub
-        - label: California Hub
-        - label: Hawaii and Pacific Hub
-        - label: New South Wales, Australia Hub    
-        - label: US East Hub        
-        - label: US Midwest Hub
-        - label: US West Hub
-        - label: Other organization
+        - Alaska Hub
+        - California Hub
+        - Hawaii and Pacific Hub
+        - New South Wales, Australia Hub    
+        - US East Hub        
+        - US Midwest Hub
+        - US West Hub
+        - Other organization
     validations:
       required: true
 
@@ -153,15 +156,16 @@ body:
     validations:
       required: false
       
-  - type: checkboxes
+  - type: dropdown
     id: origin_user_story
     attributes:
+      multiple: false
       label: Origination of user story
       description: If you are not a member of the Mukurtu Hubs project, please skip this question.
       options:
-        - label: Requested by Mukurtu Hubs staff
-        - label: Requested by Mukurtu Hubs community partner
-        - label: Other origin
+        - Requested by Mukurtu Hubs staff
+        - Requested by Mukurtu Hubs community partner
+        - Other origin
     validations:
       required: false
 
@@ -173,8 +177,4 @@ body:
     validations:
       required: false
 
-  - type: markdown
-    attributes:
-      value: |
-        Support Tools: 
-        - [Mukurtu 4 User Manual](https://mukurtu-user-manual.readthedocs.io/)
+
