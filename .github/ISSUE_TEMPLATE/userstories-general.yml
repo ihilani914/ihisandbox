@@ -65,7 +65,7 @@ body:
     validations:
       required: false
 
-  - type: checkboxes
+  - type: dropdown
     id: user_type
     attributes:
       label: In this user role
