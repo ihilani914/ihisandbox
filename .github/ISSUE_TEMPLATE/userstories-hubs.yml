@@ -23,37 +23,38 @@ body:
     validations:
       required: false
 
-  - type: checkboxes
+  - type: dropodown
     id: story_topic
     attributes:
       label: Topic
+      multiple: true
       description: From the [Mukurtu User Manual](https://mukurtu-user-manual.readthedocs.io/). Can select multiple topics. Specify other if existing topics do not apply.
       options:
-        - label: bug
-        - label: categories
-        - label: collections
-        - label: comments
-        - label: communities
-        - label: cultural protocols
-        - label: customization
-        - label: dictionary
-        - label: digital heritage
-        - label: integrations
-        - label: local contexts
-        - label: localization
-        - label: mapping and leaflet
-        - label: media
-        - label: migration
-        - label: notifications and events
-        - label: person records
-        - label: publishing workflows
-        - label: roundtrip
-        - label: search and discovery
-        - label: site configuration and administration
-        - label: taxonomies
-        - label: theme/look and feel
-        - label: user management
-        - label: other
+        - bug
+        - categories
+        - collections
+        - comments
+        - communities
+        - cultural protocols
+        - customization
+        - dictionary
+        - digital heritage
+        - integrations
+        - local contexts
+        - localization
+        - mapping and leaflet
+        - media
+        - migration
+        - notifications and events
+        - person records
+        - publishing workflows
+        - roundtrip
+        - search and discovery
+        - site configuration and administration
+        - taxonomies
+        - theme/look and feel
+        - user management
+        - other
     validations:
       required: true
 
@@ -73,25 +74,26 @@ body:
         Our user stories follow the *As a...*, *I want to...*, *So that...* format.
         eg: *As a* community manager, *I want to* create new user accounts, *so that* I don't have to ask the site administrator to do it.
         
-  - type: checkboxes
+  - type: dropdopwn
     id: user_type
     attributes:
       label: In this user role
+      multiple: true
       description: Select each user type that this applies to. Can select multiple user types. 
       options:
-        - label: Mukurtu administrator
-        - label: Community manager
-        - label: Community affiliate
-        - label: Protocol steward
-        - label: Protocol member
-        - label: Protocol affiliate
-        - label: Contributor
-        - label: Community record steward
-        - label: Curator
-        - label: Language steward
-        - label: Lanugage contributor
-        - label: Authenticated user
-        - label: Visitor
+        - Mukurtu administrator
+        - Community manager
+        - Community affiliate
+        - Protocol steward
+        - Protocol member
+        - Protocol affiliate
+        - Contributor
+        - Community record steward
+        - Curator
+        - Language steward
+        - Lanugage contributor
+        - Authenticated user
+        - Visitor
     validations:
       required: true
 
