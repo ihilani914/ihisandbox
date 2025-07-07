@@ -69,7 +69,6 @@ body:
     attributes:
       value: |
         Our user stories follow the <As a...>, <I want to...>, <So that...> format.
-      label: User story format
 
   - type: checkboxes
     id: user_type
