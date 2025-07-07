@@ -77,9 +77,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        User story format
-        ___
-
+        ## User story format
+      
         Our user stories follow the *As a...*, *I want to...*, *So that...* format.
         eg: *As a* community manager, *I want to* create new user accounts, *so that* I don't have to ask the site administrator to do it.
         
