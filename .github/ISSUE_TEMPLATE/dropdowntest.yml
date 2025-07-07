@@ -29,31 +29,9 @@ body:
       label: Topic of user story
       multiple: true
       options:
-        - label: bug
-        - label: categories
-        - label: collections
-        - label: comments
-        - label: communities
-        - label: cultural protocols
-        - label: customization
-        - label: dictionary
-        - label: digital heritage
-        - label: integrations
-        - label: local contexts
-        - label: localization
-        - label: mapping and leaflet
-        - label: media
-        - label: migration
-        - label: notifications and events
-        - label: person records
-        - label: publishing workflows
-        - label: roundtrip
-        - label: search and discovery
-        - label: site configuration and administration
-        - label: taxonomies
-        - label: theme/look and feel
-        - label: user management
-        - label: other
+        - bug
+        - categories
+        - collections
 
   - type: input
     id: story_topic_other
