@@ -1,6 +1,6 @@
 name: Hubs-only Mukurtu CMS user story
-description: Use this form if you are part of a Mukurtu Hubs and Spokes partnership, or if requested to by the Mukurtu development team.
-title: Mukurtu CMS User Stories Submission
+description: Use this form if you are part of the Mukurtu Hubs and Spokes, or if otherwise requested by the Mukurtu development team.
+title: Provide a short descriptive title for your user story
 labels: ["user story"]
 body:
   - type: checkboxes
@@ -9,16 +9,16 @@ body:
       label: Type of user story
       description: Select the type of user story.
       options:
-        - label: New feature/tool
-        - label: Update to existing feature/tool
-        - label: Other
+        - label: New feature or tool
+        - label: Update to an existing feature or tool
+        - label: Other (please specify below)
     validations:
       required: true
 
   - type: input
     id: story_type_other
     attributes: 
-      label: Other
+      label: Other user story type
       description: If you selected "Other", please briefly describe your story type.
     validations:
       required: false
@@ -26,7 +26,7 @@ body:
   - type: checkboxes
     id: story_topic
     attributes:
-      label: Topic of user story
+      label: Topic
       description: From the [Mukurtu User Manual](https://mukurtu-user-manual.readthedocs.io/). Can select multiple topics. Specify other if existing topics do not apply.
       options:
         - label: bug
@@ -60,10 +60,14 @@ body:
   - type: input
     id: story_topic_other
     attributes: 
-      label: Other topics
+      label: Other topic
       description: If you selected "Other topics", please briefly describe your story topic.
     validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: Our user stories follow the <As a...>, <I want to...>, <So that...> format.
 
   - type: checkboxes
     id: user_type
