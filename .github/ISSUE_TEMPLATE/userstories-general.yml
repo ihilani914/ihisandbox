@@ -1,5 +1,5 @@
 name: General Mukurtu CMS user story
-description: Use this form if you are submitting an issue as a general Mukurtu user.
+description: Use this form if you are submitting a user story (feature update or request) as a general Mukurtu user.
 title: Provide a short descriptive title for your user story. 
 labels: ["user story"]
 body:
@@ -8,9 +8,6 @@ body:
     attributes: 
       value: |
         This form is for user stories submitted by the general Mukurtu community. If you represent one of our Hubs, Spokes, or other partner, please use the *Hubs and spokes user story* form.
-
-        ## Relevant tools and resources:
-        - [Mukurtu 4 User Manual](https://mukurtu-user-manual.readthedocs.io/)
         
   - type: input
     id: submitting_org

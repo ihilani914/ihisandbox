@@ -1,5 +1,5 @@
 name: Hubs and spokes user story
-description: Use this form if you are part of the Mukurtu Hubs and Spokes, or if otherwise requested by the Mukurtu development team.
+description: Use this form if you are submitting a user story (feature update or request) as part of the Mukurtu Hubs and Spokes, or if otherwise requested by the Mukurtu development team.
 title: Provide a short descriptive title for your user story
 labels: ["user story"]
 body:
@@ -9,9 +9,6 @@ body:
       value: |
         This form is only for user stories submitted by our Hubs, Spokes, and other partners as requested.  
         Members of the broader community should use the *General Mukurtu CMS user story* form instead.
-
-        ## Relevant tools and resources:
-        - [Mukurtu 4 User Manual](https://mukurtu-user-manual.readthedocs.io/)
 
   - type: dropdown
     id: Submitting_org
